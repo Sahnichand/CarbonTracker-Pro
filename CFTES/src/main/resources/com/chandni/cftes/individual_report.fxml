@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chandni.cftes.IndividualReportController">
+   <children>
+      <Text layoutX="16.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name" />
+      <Text layoutX="16.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="16.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total CF" />
+      <TableView fx:id="tableUserEntries" layoutX="14.0" layoutY="117.0" prefHeight="271.0" prefWidth="571.0">
+        <columns>
+          <TableColumn fx:id="colDeviceType" prefWidth="179.0" text="Device Type" />
+          <TableColumn fx:id="colUsage" prefWidth="129.0" text="Usage" />
+            <TableColumn fx:id="colLocation" prefWidth="118.0" text="Location" />
+            <TableColumn fx:id="colCFvalue" prefWidth="144.0" text="Annual CO2e" />
+        </columns>
+      </TableView>
+      <Text fx:id="txtTotalCF" layoutX="92.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CF" />
+      <Text fx:id="txtEmail" layoutX="89.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="txtFullName" layoutX="90.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Button fx:id="btnPrint" layoutX="533.0" layoutY="14.0" mnemonicParsing="false" onAction="#printDialog" text="Print" />
+      <Button fx:id="btnClose" layoutX="533.0" layoutY="48.0" mnemonicParsing="false" onAction="#closeDialog" text="Close" />
+      <Text layoutX="17.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID" />
+      <Text fx:id="txtUserId" layoutX="92.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>
